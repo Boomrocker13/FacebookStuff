@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: DarkGray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FbStuffController">
+   <children>
+      <Button layoutX="224.0" mnemonicParsing="false" onAction="#Open" style="-fx-background-color: Black;" text="Open file(s)" textFill="#5ec957">
+         <font>
+            <Font name="Baskerville Old Face" size="25.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="text" editable="false" layoutX="70.0" layoutY="112.0" prefHeight="274.0" prefWidth="461.0" promptText="Text will appear here">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="count" layoutX="14.0" layoutY="51.0" mnemonicParsing="false" onAction="#Count" style="-fx-border-color: Lime; -fx-background-color: Black;" text="Count Messages" textFill="WHITE" />
+      <Button fx:id="AddDay" layoutX="448.0" layoutY="1.0" mnemonicParsing="false" onAction="#AddDay" style="-fx-border-color: Lime; -fx-background-color: Black;" text="AddDay" textFill="WHITE" />
+      <Button fx:id="OpenOld" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#OpenOld" style="-fx-border-color: Lime; -fx-background-color: Black;" text="Open file(s)" textFill="WHITE" />
+      <Button fx:id="OpenNew" layoutX="326.0" layoutY="65.0" mnemonicParsing="false" onAction="#OpenNew" style="-fx-border-color: Lime; -fx-background-color: Black;" text="Open created file(s)" textFill="WHITE" />
+      <Button fx:id="deleter" layoutX="459.0" layoutY="65.0" mnemonicParsing="false" onAction="#DeleteNew" style="-fx-border-color: Lime; -fx-background-color: Black;" text="Delete created file(s)" textFill="WHITE" />
+   </children>
+</AnchorPane>
